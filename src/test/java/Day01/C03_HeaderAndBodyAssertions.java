@@ -1,10 +1,10 @@
 package Day01;
 
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.*;
+import static org.testng.Assert.*;
 
 public class C03_HeaderAndBodyAssertions {
   //If the boolean value between parenthesis is FALSE test will pass
@@ -27,8 +27,8 @@ public class C03_HeaderAndBodyAssertions {
        Server is "Cowboy"
 */
 
-    @Test
-    public void bodyTest() {
+@Test
+public void bodyTest() {
 //        https://restful-booker.herokuapp.com/booking/0
         String url = " https://restful-booker.herokuapp.com/booking/0";
 

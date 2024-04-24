@@ -2,10 +2,10 @@ package Day01;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 public class C02HeaderAssertions {
 
@@ -24,7 +24,7 @@ public class C02HeaderAssertions {
         Connection should be keep-alive
 */
 @Test
-    public  void  headerTest(){
+public  void  headerTest(){
 // While doing api test you can follow the following 4 steps:
 
 

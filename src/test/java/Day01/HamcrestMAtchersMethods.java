@@ -3,7 +3,7 @@ package Day01;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -11,8 +11,8 @@ import static org.hamcrest.Matchers.*;
 
 public class HamcrestMAtchersMethods {
 
-    @Test
-    public void commonHamcrestMethods() {
+@Test
+public void commonHamcrestMethods() {
 
     /*
     Core Matchers:

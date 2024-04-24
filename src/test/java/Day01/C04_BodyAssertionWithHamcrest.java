@@ -1,10 +1,10 @@
 package Day01;
 
-import org.junit.jupiter.api.Test;
 
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -28,8 +28,8 @@ public class C04_BodyAssertionWithHamcrest {
 */
 
 
-    @Test
-    public void assertBodyMethod() {
+@Test
+public void assertBodyMethod() {
 
         //1. Set the url
 //        https://jsonplaceholder.typicode.com/todos/23

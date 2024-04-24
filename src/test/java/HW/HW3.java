@@ -2,7 +2,7 @@ package HW;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
@@ -21,8 +21,8 @@ public class HW3 {
    And
        Status Line should be HTTP/1.1 200 OK
 */
-    @Test
-    public void Test() {
+@Test
+public void Test() {
         String url = " https://reqres.in/api/users/3";
         Response response = given().when().get(url);
 

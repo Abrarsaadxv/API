@@ -1,14 +1,14 @@
 package Day01;
 
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class C05_BodyAssertionWithHamcrest {
+
     /*
     Given
         https://jsonplaceholder.typicode.com/todos
@@ -30,27 +30,27 @@ public class C05_BodyAssertionWithHamcrest {
 public void assertBodyHamcrestMethod() {
 
 //        1. Set the URL
-    String url = "https://jsonplaceholder.typicode.com/todos";
+        String url = "https://jsonplaceholder.typicode.com/todos";
 //        2. Set the expected data
 
 //        3. Send the request and get the response
-    Response response = given().when().get(url);
-    //response.prettyPrint();
+        Response response = given().when().get(url);
+        //response.prettyPrint();
 
 //        4. Do Assertion
-    response
-            .then()
-            .statusCode(200)
-            .contentType(ContentType.JSON)
-            .body("id",hasSize(200)) //hasSize() method checks this list's number of element
-            .body("title",hasItem("quis ut nam facilis et officia qui"))
-            .body("userId",hasItems(2,7,9));
+        response
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body("id",hasSize(200)) //hasSize() method checks this list's number of element
+                .body("title",hasItem("quis ut nam facilis et officia qui"))
+                .body("userId",hasItems(2,7,9));
 
 
-    //hasItem() method checks the existence of one single element in a list
-    //hasItems() method checks existence of multiple elements in a list
+        //hasItem() method checks the existence of one single element in a list
+        //hasItems() method checks existence of multiple elements in a list
 
-}
+    }
 
 
 

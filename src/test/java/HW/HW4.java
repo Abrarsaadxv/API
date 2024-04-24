@@ -1,7 +1,7 @@
 package HW;
 
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.get;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -24,8 +24,8 @@ public class HW4 {
             Response body should be empty
      */
 
-    @Test
-    public void  testhw4(){
+@Test
+public void  testhw4(){
 
         String url ="https://reqres.in/api/users/23";
         Response response =  get(url);
