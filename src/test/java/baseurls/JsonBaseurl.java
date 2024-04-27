@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
-public class JosnBaseurl {
+public class JsonBaseurl {
 
     protected RequestSpecification spec;
     @BeforeMethod

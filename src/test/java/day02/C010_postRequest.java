@@ -1,7 +1,6 @@
 package day02;
 
-import baseurls.JosnBaseurl;
-import io.restassured.http.ContentType;
+import baseurls.JsonBaseurl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -9,7 +8,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.assertTrue;
 
-public class C010_postRequest extends JosnBaseurl {
+public class C010_postRequest extends JsonBaseurl {
         /*
      Given
        1) https://jsonplaceholder.typicode.com/todos

@@ -1,17 +1,16 @@
 package day02;
 
-import baseurls.JosnBaseurl;
+import baseurls.JsonBaseurl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import java.util.List;
-import java.util.Objects;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class C09_GroovyLanguage extends JosnBaseurl {
+public class C09_GroovyLanguage extends JsonBaseurl {
         /*
     Given
         https://jsonplaceholder.typicode.com/todos
