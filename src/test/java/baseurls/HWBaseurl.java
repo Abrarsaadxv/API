@@ -12,6 +12,8 @@ public class HWBaseurl {
     public void setUp(){
         spec = new RequestSpecBuilder()
                 .setBaseUri("https://reqres.in/api")
+                .setContentType(ContentType.JSON)
+
                 .build();
     }
 }
